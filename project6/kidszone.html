@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--  Bootstrap added -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script scr="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></script>
+    <title>ATT WebDev Project5</title>
+    <link href="home.html" rel="stylesheet">
+    <link href="restaurants.html" rel="stylesheet">
+    <link href="kidszone.html" rel="stylesheet">
+    <link href="adultgetaway.html" rel="stylesheet">
+    <link href="parks.html" rel="stylesheet">
+    <link href="concertvenues.html" rel="stylesheet">
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body id="kidszone" style="height: 2000px">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- navbar-header is used to add links onto the naviagtion bar. -->
+                <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <!-- St. Louis Museum of Transportation --><a class="navbar-brand" href="http://saintlouis.kidsoutandabout.com/content/top-20-places-take-kids-st-louis-area" target="_blank" id="stlouis">St. Louis</a> </div>
+            <!-- navbar collapse creates a bar in the  upper right corner of the screen when it is too small to view on devices. This way it will act as a dropdown. -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- inside the header you must have nav navbar-nav to create your buttons/links onto the navigation bar. make sure you make your list active againor it won't do anything. -->
+                    <li class="active"> <a href="#">Home</a> </li>
+                    <li> <a href="http://www.monkeyjoes.com/locations/st-louis" target="_blank">Monkey
+                        Joe's</a> </li>
+                    <li> <a href="http://www.citymuseum.org/" target="_blank">City Museum</a> </li>
+                    <li> <a href="https://www.magichouse.org/" target="_blank">Magic House</a> </li>
+                    <li> <a href="https://www.stlouis-mo.gov/government/departments/parks/parks/browse-parks/view-park.cfm?parkID=55&parkName=Ray%20Leisure%20Park&amenitySubTypeID=54" target="_blank">Playground</a> </li>
+                    <!-- dropdown menu bar attempt on food; must make class="active" to start the dropdown menu. -->
+                    <li class="active"> <a href="#">&gt;&gt;</a> </li>
+                    <!-- dropdown requires jquery and bootstrap. min for it to work. without the files you will not be able to click on it for any action. -->
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Rides<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li> <a href="http://saintlouis.kidsoutandabout.com/content/big-joels-safari" target="_blank">Big Joel's Safari</a> </li>
+                            <li> <a href="http://saintlouis.kidsoutandabout.com/content/miss-kellys-gym-kids" target="_blank">Miss Kelly's Gym</a> </li>
+                            <li> <a href="http://saintlouis.kidsoutandabout.com/content/grants-farm" target="_blank">Grant's Farm</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="https://www.stlouis-mo.gov/government/departments/parks/index.cfm" target="_blank">About</a> </li>
+                </ul>
+                <!-- We still need to use the navbar left so that the search form will place next to the links and dropdown -->
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search"> </div>
+                    <!--button type at this time is a pretty simple form. no active use at this time-->
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <!--end of form-group with the input type and button. Very little room now for extras on the navigation bar. -->
+                <!-- navbar-right will give us some space in the middle to add more links or icons. -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <a href="#"><span class=
+                        "glyphicon glyphicon-user"></span> Sign Up</a> </li>
+                    <li> <a href="#"><span class=
+                        "glyphicon glyphicon-log-in"></span> Login</a> </li>
+                </ul>
+            </div>
+            <!-- end of div taken out for collpase -->
+        </div>
+    </nav>
+    <div class="container"> !-- Breadcrumb menu to navigate between HTML pages. -->
+        <h4>St. Louis Pages</h4>
+        <ul class="breadcrumb">
+            <li><a href="home.html" target="_blank">Home</a></li>
+            <li><a href="restaurants.html" target="_blank">Restaurants</a></li>
+            <li class="active"><a href="#">Kid's Zone</a></li>
+            <li><a href="adultgetaway.html" target="_blank">Adult Getaway</a></li>
+            <li><a href="parks.html" target="_blank">Parks</a></li>
+            <li><a href="concertvenues.html" target="_blank">Concert Venues</a></li>
+        </ul>
+    </div>
+    <!-- jumbotron text starts right under naviagtion bar, let's begin, shall we!!! -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="entertainment">Kid's Zone</h1> </div>
+    </div>
+    <!-- Start to Carousel -->
+    <div class="container img-responsive">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active"> <img src="kidszone/play.jpg" alt="Indoor Playground" width="300" height="500">
+                    <div class="carousel-caption">
+                        <h3 id="p1">Indoor Playground</h3>
+                        <p id="p2">Picture 1</p>
+                    </div>
+                </div>
+                <div class="item"> <img src="kidszone/play0.jpg" alt="City Museum1" width="300" height="500">
+                    <div class="carousel-caption">
+                        <h3 id="p1">City Museum</h3>
+                        <p id="p2">Picture 2</p>
+                    </div>
+                </div>
+                <div class="item"> <img src="kidszone/play1.jpg" alt="City Museum2" width="300" height="500">
+                    <div class="carousel-caption">
+                        <h3 id="p1">City Museum</h3>
+                        <p id="p2">Picture 3</p>
+                    </div>
+                </div>
+                <div class="item"> <img src="kidszone/play2.jpg" alt="City Museum3" width="300" height="500">
+                    <div class="carousel-caption">
+                        <h3 id="p1">City Museum</h3>
+                        <p id="p2">Picture 4</p>
+                    </div>
+                </div>
+                <div class="item"> <img src="kidszone/play3.jpg" alt="City Museum4" width="300" height="500">
+                    <div class="carousel-caption">
+                        <h3 id="p1">City Museum</h3>
+                        <p id="p2">Picture 5</p>
+                    </div>
+                </div>
+                <div class="item"> <img src="kidszone/play4.jpg" alt="City Museum5" width="300" height="500">
+                    <div class="carousel-caption">
+                        <h3 id="p1">City Museum</h3>
+                        <p id="p2">Picture 6</p>
+                    </div>
+                </div>
+                <div class="item"> <img src="kidszone/tunnel.jpg" alt="Kid's Tunnel" width="300" height="500">
+                    <div class="carousel-caption">
+                        <h3 id="p1">Kid's Tunnel</h3>
+                        <p id="p2">Picture 7</p>
+                    </div>
+                </div>
+                <div class="item"> <img src="kidszone/play2.jpg" alt="City Museum7" width="300" height="500">
+                    <div class="carousel-caption">
+                        <h3 id="p1">City Museum</h3>
+                        <p id="p2">Picture 8</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+        </div>
+    </div>
+    <div style="text-align: center"> <a class="att1" href="#top">Go to top of page</a> </div>
+</body>
+
+</html>

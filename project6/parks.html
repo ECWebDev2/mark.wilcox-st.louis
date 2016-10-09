@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--  Bootstrap added -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <title>ATT WebDev Project5</title>
+    <link href="home.html" rel="stylesheet">
+    <link href="restaurants.html" rel="stylesheet">
+    <link href="kidszone.html" rel="stylesheet">
+    <link href="adultgetaway.html" rel="stylesheet">
+    <link href="parks.html" rel="stylesheet">
+    <link href="concertvenues.html" rel="stylesheet">
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body id="parks" style="height: 2000px">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- navbar-header is used to add links onto the naviagtion bar. -->
+                <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <!-- St. Louis Museum of Transportation --><a class="navbar-brand" href="#" target="_blank" id="stlouis">St. Louis</a> </div>
+            <!-- navbar collapse creates a bar in the  upper right corner of the screen when it is too small to view on devices. This way it will act as a dropdown. -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- inside the header you must have nav navbar-nav to create your buttons/links onto the navigation bar. make sure you make your list active againor it won't do anything. -->
+                    <li class="active"> <a href="#">Home</a> </li>
+                    <li> <a href="https://mostateparks.com/" target="_blank">State Parks</a> </li>
+                    <li> <a href="http://www.wentzvillemo.org/" target="_blank">Recreational Parks</a> </li>
+                    <li> <a href="https://www.mapquest.com/" target="_blank">Directions</a> </li>
+                    <li> <a href="http://fastmaps.org/driving-directions.php" target="_blank">Maps</a> </li>
+                    <!-- dropdown menu bar attempt on food; must make class="active" to start the dropdown menu. -->
+                    <li class="active"> <a href="#">>></a> </li>
+                    <!-- dropdown requires jquery and bootstrap. min for it to work. without the files you will not be able to click on it for any action. -->
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">City<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li> <a href="https://www.google.com/#q=ofallon+mo+parks" target="_blank">O'Fallon</a> </li>
+                            <li> <a href="https://www.google.com/#q=wentzville+mo+parks" target="_blank">Wentzville</a> </li>
+                            <li> <a href="https://www.google.com/#q=st+charles+mo+parks" target="_blank">St. Charles</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="https://www.stlouis-mo.gov/government/departments/parks/" target="_blank">About</a> </li>
+                </ul>
+                <!-- We still need to use the navbar left so that the search form will place next to the links and dropdown -->
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search"> </div>
+                    <!--button type at this time is a pretty simple form. no active use at this time-->
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <!--end of form-group with the input type and button. Very little room now for extras on the navigation bar. -->
+                <!-- navbar-right will give us some space in the middle to add more links or icons. -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <a href="#"><span class=
+                        "glyphicon glyphicon-user"></span> Sign Up</a> </li>
+                    <li> <a href="#"><span class=
+                        "glyphicon glyphicon-log-in"></span> Login</a> </li>
+                </ul>
+            </div>
+            <!-- end of div taken out for collpase -->
+        </div>
+    </nav>
+    <div class="container"> !-- Breadcrumb menu to navigate between HTML pages. -->
+        <h4>St. Louis Pages</h4>
+        <br>
+        <ul class="breadcrumb">
+            <li><a href="home.html" target="_blank">Home</a></li>
+            <li><a href="restaurants.html" target="_blank">Restaurants</a></li>
+            <li><a href="kidszone.html" target="_blank">Kid's Zone</a></li>
+            <li><a href="adultgetaway.html" target="_blank">Adult Getaway</a></li>
+            <li class="active"><a href="#">Parks</a></li>
+            <li><a href="concertvenues.html" target="_blank">Concert Venues</a></li>
+        </ul>
+    </div>
+    <!-- jumbotron text starts right under naviagtion bar, let's begin, shall we!!! -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="entertainment">Parks</h1> </div>
+    </div>
+    <!--Parks-->
+    <!-- start to images, want to include 3 different images -->
+    <!-- the columns have to add up to 12 on the first value, then after that you can put any values you want within each div. example=col-md-3 col-sm-4 col-xs-6 -->
+    <div class="container img-responsive" id="three">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <a href="https://foursquare.com/v/turtle-park/4aec50fef964a52002c621e3" target="_blank">
+                    <p class="image5">"Turtle Park"</p> <img alt="Turtle Park" src="parks/turtle.jpg" class="img-circle" style="width: 300px; height: 300px"></a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="https://foursquare.com/v/lafayette-park/4b255c20f964a5209d7024e3" target="_blank">
+                    <p class="image5">"Lafayette Park"</p><img alt="Lafayette Park" src="parks/ducks.jpg" class="img-circle" style="width: 300px; height: 300px"></a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <a href="https://foursquare.com/v/forest-park-grand-basin/4bbf78a830c99c74f4435511" target="_blank">
+                    <p class="image5">"The Royale"</p> <img alt="Forest Park Grand Basin" src="parks/basin.jpg" class="img-circle" style="width: 300px; height: 300px"></a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- end of images -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12" id="park1">
+                <p>Turtle Park (also Turtle Playground) is a sculpture park located at the southern edge of Forest Park in St. Louis, Missouri at the intersection of Oakland Avenue and Tamm Avenue. The park contains seven concrete turtles and one snake. The turtles were designed and sculpted by Bob Cassilly and the park opened in August 1996. Turtle Park can be seen from Interstate 64 and the Saint Louis Zoo to the north.</p>
+            </div>
+            <div class="col-md-4 col-sm-6" id="park2">
+                <p>Lafayette Square is a neighborhood in St. Louis, Missouri, which is bounded on the north by Chouteau Avenue, on the south by Interstate 44, on the east by Truman Parkway, and on the west by South Jefferson Avenue. It surrounds Lafayette Park (see below), which is the city's oldest public park — created by local ordinance in 1836.</p>
+            </div>
+            <div class="col-md-4 col-sm-6" id="park3">
+                <p>Forest Park is a public park located in the western part of the city of St. Louis, Missouri, in the United States. It is a prominent civic center and covers 1,371 acres. The park, which opened in 1876, more than a decade after its proposal, has hosted several significant events, including the Louisiana Purchase Exposition of 1904 and the 1904 Summer Olympics. Bounded by Skinker Boulevard, Lindell Boulevard, Kingshighway Boulevard, and Oakland Avenue, the park is known as the "heart of St. Louis" and features a variety of attractions, including the St. Louis Zoo, the Saint Louis Art Museum, the Missouri History Museum, and the St. Louis Science Center.</p>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center"> <a class="att1" href="#top">Go to top of page</a> </div>
+</body>
+
+</html>

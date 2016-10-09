@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--  Bootstrap added -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <title>ATT WebDev Project5</title>
+    <link href="home.html" rel="stylesheet">
+    <link href="restaurants.html" rel="stylesheet">
+    <link href="kidszone.html" rel="stylesheet">
+    <link href="adultgetaway.html" rel="stylesheet">
+    <link href="parks.html" rel="stylesheet">
+    <link href="concertvenues.html" rel="stylesheet">
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body id="restaurants" style="height: 2000px">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- navbar-header is used to add links onto the naviagtion bar. -->
+                <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <!-- St. Louis brand name.   # indicates no site implemented at this time --><a alt="St. Louis" class="navbar-brand" href="#" id="stlouis">St. Louis</a> </div>
+            <!-- navbar collapse creates a bar in the  upper right corner of the screen when it is too small to view on devices. This way it will act as a dropdown. -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- inside the header you must have nav navbar-nav to create your buttons/links onto the navigation bar. make sure you make your list active again or it won't do anything. -->
+                    <li class="active"> <a href="#">Home</a> </li>
+                    <!-- dropdown menu bar attempt on food; must make class="active" to start the dropdown menu.-->
+                    <!-- dropdown requires jquery and bootstrap. min for it to work. without the files you will not be able to click on it for any action. -->
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Burgers<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- Bailey's Range, found in links notepad -->
+                            <li> <a href="https://foursquare.com/v/baileys-range/4e98b6b182310013a0c3716d" target="_blank" alt="Bsiley's Range">Bailey's Range</a> </li>
+                            <!-- Stacked STL, found in links notepad -->
+                            <li> <a href="https://foursquare.com/v/stacked-stl/51cf8d9f498e62b1b3423f1c" target="_blank" alt="Stacked STL">Stacked STL</a> </li>
+                            <!-- The Royale, found in links notepad -->
+                            <li> <a href="https://foursquare.com/v/the-royale/4acbc3faf964a520b8c520e3" target="_blank" alt="The Royale">The Royale</a> </li>
+                            <!-- More Burger Places -->
+                            <li> <a href="https://foursquare.com/top-places/saint-louis/best-places-burgers" target="_blank" alt="More Burger Places">More Burger Places</a> </li>
+                            <!-- About -->
+                            <li> <a href="https://www.stlmag.com/The-Best-Burgers-in-St-Louis/" target="_blank" alt="About Burger Places">About</a> </li>
+                        </ul>
+                    </li>
+                    <!-- dropdown menu bar attempt on food; must make class="active" to start the dropdown menu.-->
+                    <!-- dropdown requires jquery and bootstrap. min for it to work. without the files you will not be able to click on it for any action. -->
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Steak<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- Tucker's Place Soulard -->
+                            <li> <a href="https://foursquare.com/v/tuckers-place-soulard/4acbc3fcf964a520abc620e3" target="_blank" alt="Tucker's Place Soulard">Tucker's Place Soulard</a> </li>
+                            <!-- The Best Steak House -->
+                            <li> <a href="https://foursquare.com/v/the-best-steak-house/4b180dd4f964a52029cc23e3" target="_blank" alt="The Best Steak House">The Best Steak House</a> </li>
+                            <!-- Kenrick's Meat Market -->
+                            <li> <a href="https://foursquare.com/v/kenricks-meat-market/4b2b9b32f964a52021b824e3" target="_blank" alt="Kenrick's Meat Market">Kenrick's Meat Market</a> </li>
+                            <!-- More Steak Places -->
+                            <li> <a href="https://foursquare.com/top-places/saint-louis/best-places-steak" target="_blank" alt="More Steak Places">More Steak Places</a> </li>
+                            <!-- About -->
+                            <li> <a href="http://www.10best.com/destinations/missouri/st.-louis/restaurants/additional-steakhouse/" target="_blank" alt="About Steak Places">About</a> </li>
+                        </ul>
+                    </li>
+                    <!-- dropdown menu bar attempt on food; must make class="active" to start the dropdown menu.-->
+                    <!-- dropdown requires jquery and bootstrap. min for it to work. without the files you will not be able to click on it for any action. -->
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Chicken<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- Old Standard -->
+                            <li> <a href="https://foursquare.com/v/old-standard/5445807f498edd6718fd6e7b" target="_blank" alt="Old Standard">Old Standard</a> </li>
+                            <!-- Sweetie Pie's -->
+                            <li> <a href="https://foursquare.com/v/sweetie-pies/4aff0519f964a5200a3322e3" target="_blank" alt="Sweetie Pie's">Sweetie Pie's</a> </li>
+                            <!-- Southern -->
+                            <li> <a href="https://foursquare.com/v/southern/558c26cf498eab6249dc1a9c" target="_blank" alt="Southern">Southern</a> </li>
+                            <!-- More Chicken Places -->
+                            <li> <a href="https://foursquare.com/top-places/saint-louis/best-places-fried-chicken" target="_blank" alt="More Chicken Places">More Chicken Places</a> </li>
+                            <!-- About -->
+                            <li> <a href="http://www.stltoday.com/entertainment/dining/restaurants/reviews/best-fried-chicken/article_360cb634-3afc-11e0-9cbc-00127992bc8b.html" target="_blank" alt="About Chicken Places">About</a> </li>
+                        </ul>
+                    </li>
+                    <!-- dropdown menu bar attempt on food; must make class="active" to start the dropdown menu.-->
+                    <!-- dropdown requires jquery and bootstrap. min for it to work. without the files you will not be able to click on it for any action. -->
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Seafood<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- Broadway Oyster Bar -->
+                            <li> <a href="https://foursquare.com/v/broadway-oyster-bar/4acbc3fcf964a5207ac620e3" target="_blank" alt="Broadway Oyster Bar">Broadway Oyster Bar</a> </li>
+                            <!-- Peacemaker Lobster & Crab -->
+                            <li> <a href="https://foursquare.com/v/peacemaker-lobster--crab/53ead9fa498eb4d0437a5e0a" target="_blank" alt="Peacemaker Lobster & Crab">Peacemaker Lobster & Crab</a> </li>
+                            <!-- The Schlafly Tap Room -->
+                            <li> <a href="https://foursquare.com/v/the-schlafly-tap-room/4b5133c1f964a5200e4727e3" target="_blank" alt="The Schlafly Tap Room">The Schlafly Tap Room</a> </li>
+                            <!-- More Seafood Places -->
+                            <li> <a href="https://foursquare.com/top-places/saint-louis/best-places-seafood" target="_blank" alt="More Seafood Places">More Seafood Places</a> </li>
+                            <!-- About -->
+                            <li> <a href="http://www.riverfronttimes.com/foodblog/2014/08/21/the-10-best-seafood-restaurants-in-st-louis" target="_blank" alt="About Seafood Places">About</a> </li>
+                        </ul>
+                    </li>
+                    <!-- dropdown menu bar attempt on food; must make class="active" to start the dropdown menu.-->
+                    <!-- dropdown requires jquery and bootstrap. min for it to work. without the files you will not be able to click on it for any action. -->
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pizza<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- Pi Pizzeria -->
+                            <li> <a href="https://foursquare.com/v/pi-pizzeria/4adb3e5df964a5202f2521e3" target="_blank" alt="Pi Pizzeria">Pi Pizzeria</a> </li>
+                            <!-- PW Pizza -->
+                            <li> <a href="https://foursquare.com/pwpizza" target="_blank" alt="PW Pizza">PW Pizza</a> </li>
+                            <!-- Felix's -->
+                            <li> <a href="https://foursquare.com/v/felixs/4acbc3faf964a520dcc520e3" target="_blank" alt="Felix's">Felix's</a> </li>
+                            <!-- More Pizza Places -->
+                            <li> <a href="https://foursquare.com/top-places/saint-louis/best-places-pizza" target="_blank" alt="More Pizza Places">More Pizza Places</a> </li>
+                            <!-- About -->
+                            <li> <a href="https://www.tripadvisor.com/Restaurants-g44881-c31-Saint_Louis_Missouri.html" target="_blank" alt="About Pizza Places">About</a> </li>
+                        </ul>
+                    </li>
+                    <!-- We still need to use the navbar left so that the search form will place next to the links and dropdown -->
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search"> </div>
+                        <!--button type at this time is a pretty simple form. no active use at this time-->
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <!--end of form-group with the input type and button. Very little room now for extras on the navigation bar. -->
+                    <!-- navbar-right will give us some space in the middle to add more links or icons. -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li> <a href="#"><span class=
+                        "glyphicon glyphicon-user"></span> Sign Up</a> </li>
+                        <li> <a href="#"><span class=
+                        "glyphicon glyphicon-log-in"></span> Login</a> </li>
+                    </ul>
+                </ul>
+            </div>
+            <!-- end of div taken out for collpase -->
+        </div>
+    </nav>
+    <div class="container"> !-- Breadcrumb menu to navigate between HTML pages. -->
+        <h4>St. Louis Pages</h4>
+        <ul class="breadcrumb">
+            <li><a href="home.html" target="_blank">Home</a></li>
+            <li class="active"><a href="#">Restaurants</a></li>
+            <li><a href="kidszone.html" target="_blank">Kid's Zone</a></li>
+            <li><a href="adultgetaway.html" target="_blank">Adult Getaway</a></li>
+            <li><a href="parks.html" target="_blank">Parks</a></li>
+            <li><a href="concertvenues.html" target="_blank">Concert Venues</a></li>
+        </ul>
+    </div>
+    <!-- jumbotron text starts right under naviagtion bar!!! -->
+    <div class="container">
+        <div class="page-header" id="white">
+            <h1 class="entertainment">Restaurants</h1> </div>
+    </div>
+    <!--Burgers-->
+    <!-- start to images, want to include 4 different images -->
+    <!-- the columns have to add up to 12 on the first value, then after that you can put any values you want within each div. example=col-md-3 col-sm-4 col-xs-6 -->
+    <div class="container" id="burgers">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Bailey's Range"</p> <img alt="Bailey's Range" src="restaurants/burgers/baileys.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Stacked STL"</p><img alt="Stacked STL" src="restaurants/burgers/stacked.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"The Royale"</p> <img alt="The Royale" src="restaurants/burgers/royale.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"O'Connell's"</p> <img alt="O'Connell's" src="restaurants/burgers/oconnells.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+        </div>
+    </div>
+    <!-- end of images -->
+    <!--Steaks-->
+    <!-- start to images, want to include 4 different images -->
+    <!-- the columns have to add up to 12 on the first value, then after that you can put any values you want within each div. example=col-md-3 col-sm-4 col-xs-6 -->
+    <div class="container" id="steak">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Tucker's Place Soulard"</p> <img alt="Tucker's Place Soulard" src="restaurants/steak/tuckers.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"The Best Steak House"</p><img alt="The Best Steak House" src="restaurants/steak/best.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Kenrick's Meat Market"</p> <img alt="Kenrick's Meat Market" src="restaurants/steak/kenricks.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Rooster's"</p> <img alt="Rooster's" src="restaurants/steak/rooster.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+        </div>
+    </div>
+    <!-- end of images -->
+    <!--Chicken-->
+    <!-- start to images, want to include 4 different images -->
+    <!-- the columns have to add up to 12 on the first value, then after that you can put any values you want within each div. example=col-md-3 col-sm-4 col-xs-6 -->
+    <div class="container" id="chicken">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Old Standard"</p> <img alt="Old Standard" src="restaurants/chicken/old.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Sweetie Pie's"</p><img alt="Sweetie Pie's" src="restaurants/chicken/sweetie.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Southern"</p> <img alt="Southern" src="restaurants/chicken/southern.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Piccadilly's"</p> <img alt="Piccadilly's" src="restaurants/chicken/piccadilly.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+        </div>
+    </div>
+    <!-- end of images -->
+    <!--Seafood-->
+    <!-- start to images, want to include 4 different images -->
+    <!-- the columns have to add up to 12 on the first value, then after that you can put any values you want within each div. example=col-md-3 col-sm-4 col-xs-6 -->
+    <div class="container" id="seafood">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Broadway Oyster Bar"</p> <img alt="Broadway Oyster Bar" src="restaurants/seafood/broadway.jpg" class="img-rounded" style="width: 275px; height: 300px"> </a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Peacemaker Lobster and Crab"</p><img alt="Peacemaker Lobster and Crab" src="restaurants/seafood/peacemaker.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"The Schlafly Tap Room"</p> <img alt="The Schlafly Tap Room" src="restaurants/seafood/schlafly.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Eleven Eleven"</p> <img alt="Eleven Eleven" src="restaurants/seafood/eleven.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+        </div>
+    </div>
+    <!-- end of images -->
+    <!--Pizza-->
+    <!-- start to images, want to include 4 different images -->
+    <!-- the columns have to add up to 12 on the first value, then after that you can put any values you want within each div. example=col-md-3 col-sm-4 col-xs-6 -->
+    <div class="container" id="pizza">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Pi Pizza"</p> <img alt="Pi Pizza" src="restaurants/pizza/pipizza.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"PW Pizza"</p><img alt="PW Pizza" src="restaurants/pizza/pwpizza.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Felix's"</p> <img alt="Felix's" src="restaurants/pizza/felix.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="img-rounded">
+                    <p class="image">"Black Thorn Pub and Pizza"</p> <img alt="Black Thorn Pub and Pizza" src="restaurants/pizza/blackthorn.jpg" class="img-rounded" style="width: 275px; height: 300px"></a>
+            </div>
+        </div>
+    </div>
+    <!-- end of images -->
+    <div style="text-align: center"> <a class="att1" href="#top">Go to top of page</a> </div>
+</body>
+
+</html>

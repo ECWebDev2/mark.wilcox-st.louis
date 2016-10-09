@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!--  Bootstrap added -->
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="CSS/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">    
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <title>ATT WebDev Project5</title>
+<link href="home.html" rel="stylesheet">
+<link href="restaurants.html" rel="stylesheet">
+<link href="kidszone.html" rel="stylesheet">
+<link href="adultgetaway.html" rel="stylesheet">
+<link href="parks.html" rel="stylesheet">  
+<link href="concertvenues.html" rel="stylesheet">    
+<link href="index.css" type="text/css" rel="stylesheet">    
+<style>
+</style>
+</head>
+<body id="home" style="height: 2000px">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- navbar-header is used to add links onto the naviagtion bar. -->
+        <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"><span class=
+                "icon-bar"></span> <span class="icon-bar"></span> <span class=
+                "icon-bar"></span></button>
+        <!-- St. Louis Museum of Transportation -->
+        <a alt="Museum of Transportation" class="navbar-brand" href="http://transportmuseumassociation.org/" target="_blank" id="stlouis">St. Louis</a>
+      </div>
+      <!-- navbar collapse creates a bar in the  upper right corner of the screen when it is too small to view on devices. This way it will act as a dropdown. -->
+
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <!-- inside the header you must have nav navbar-nav to create your buttons/links onto the navigation bar. make sure you make your list active againor it won't do anything. -->
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+
+
+          <li>
+            <a href="https://www.sixflags.com/" target="_blank">Six Flags</a>
+          </li>
+
+
+          <li>
+            <a href="http://stlouis.cardinals.mlb.com/stl/ballpark/" target="_blank">Busch Stadium</a>
+          </li>
+
+
+          <li>
+            <a href="https://www.stlzoo.org/" target="_blank">Zoo</a>
+          </li>
+
+
+          <li>
+            <a href="http://www.gatewayarch.com/" target="_blank">Arch</a>
+          </li>
+          <!-- dropdown menu bar attempt on food; must make class="active" to start the dropdown menu. -->
+
+          <li class="active">
+            <a href="#">>></a>
+          </li>
+
+          <!-- dropdown requires jquery and bootstrap. min for it to work. without the files you will not be able to click on it for any action. -->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Food <span class="caret"></span></a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a href="http://www.lionschoice.com/food" target="_blank">Lion's Choice</a>
+              </li>
+
+
+              <li>
+                <a href="http://rallys.com/" target="_blank">Rally's</a>
+              </li>
+
+
+              <li>
+                <a href="https://www.jackinthebox.com/" target="_blank">Jack in the Box</a>
+              </li>
+            </ul>
+          </li>
+
+
+          <li>
+            <a href="http://www.entertainment-stl.com/" target="_blank">About</a>
+          </li>
+        </ul>
+        <!-- We still need to use the navbar left so that the search form will place next to the links and dropdown -->
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <!--button type at this time is a pretty simple form. no active use at this time-->
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <!--end of form-group with the input type and button. Very little room now for extras on the navigation bar. -->
+
+        <!-- navbar-right will give us some space in the middle to add more links or icons. -->
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#"><span class=
+                        "glyphicon glyphicon-user"></span> Sign Up</a>
+          </li>
+
+
+          <li>
+            <a href="#"><span class=
+                        "glyphicon glyphicon-log-in"></span> Login</a>
+          </li>
+        </ul>
+      </div>
+      <!-- end of div taken out for collpase -->
+    </div>
+  </nav>
+    <div class="container">
+    !-- Breadcrumb menu to navigate between HTML pages. -->
+    <h4>St. Louis Pages</h4>
+  
+<ul class="breadcrumb">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="restaurants.html" target="_blank">Restaurants</a></li>
+    <li><a href="kidszone.html" target="_blank">Kid's Zone</a></li>
+    <li><a href="adultgetaway.html" target="_blank">Adult Getaway</a></li>
+    <li><a href="parks.html" target="_blank">Parks</a></li>
+    <li><a href="concertvenues.html" target="_blank">Concert Venues</a></li>
+</ul>
+</div>
+    
+  <!-- jumbotron text starts right under naviagtion bar, let's begin, shall we!!! -->
+
+
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1 class="entertainment">St. Louis</h1>
+
+
+      <p class="para1">St. Louis is an independent city and inland port in the U.S. state of Missouri. The city developed along the western bank of the Mississippi River, which forms Missouri's border with Illinois. In 2010, St. Louis had a population of 319,294; a 2015
+        estimate put the population at 315,685, making it the 60th-most populous U.S. city and the second-largest city in Missouri after Kansas City.</p>
+    </div>
+  </div>
+  <!--short-lived jumbotron text and indented paragraph come to an end -->
+  <!-- start to images, want to include 4 different images -->
+  <!-- the columns have to add up to 12 on the first value, then after that you can put any values you want within each div. example=col-md-3 col-sm-4 col-xs-6 -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <a class="thumbnail" href="https://www.sixflags.com/sites/default/files/boomoverallv3-resized.jpg">
+          <p class="image">"Six Flags St. Louis, Boomerang"</p>
+          <img alt="Six Flags" src="https://www.sixflags.com/sites/default/files/boomoverallv3-resized.jpg" style="width: 300px; height: 300px"></a>
+      </div>
+
+
+      <div class="col-md-3 col-sm-6">
+        <a class="thumbnail" href="http://fullhdpictures.com/wp-content/uploads/2015/10/St.Louis-Cardinals-Stadium-Wallpaper.jpg">
+          <p class="image">"Busch Stadium"</p><img alt="Busch Stadium" src="http://fullhdpictures.com/wp-content/uploads/2015/10/St.Louis-Cardinals-Stadium-Wallpaper.jpg" style="width: 300px; height: 300px"></a>
+      </div>
+
+
+      <div class="col-md-3 col-sm-6">
+        <a class="thumbnail" href="http://kmov.images.worldnow.com/images/7992836_G.jpg">
+          <p class="image">"St. Louis Zoological Park"</p>
+          <img alt="St. Louis Zoo" src="http://kmov.images.worldnow.com/images/7992836_G.jpg" style="width: 300px; height: 300px"></a>
+      </div>
+
+
+      <div class="col-md-3 col-sm--6">
+        <a class="thumbnail" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/240px-St_Louis_night_expblend_cropped.jpg">
+          <p class="image">"The Gateway Arch"</p>
+          <img alt="St. Louis Arch" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/St_Louis_night_expblend_cropped.jpg/240px-St_Louis_night_expblend_cropped.jpg" style="width: 300px; height: 300px"></a>
+      </div>
+    </div>
+    <!-- end of images -->
+    <!--start to description of four of our main subjects -->
+
+
+    <section class="row section1">
+      <article class="col-md-3 col-sm-6 column1">
+        <p><strong>Six Flags St. Louis</strong>, originally known as Six Flags Over Mid-America, is a theme park located in Eureka, Missouri, a suburb within southwestern Greater St. Louis. The park is located within the far northeastern portion of the Ozark
+          Plateau, 34 miles southwest of downtown St. Louis, Missouri. The park opened on June 5, 1971. It was the third of only three company start-up parks created by the Six Flags chain. The other two parks built from the ground up were Six Flags over
+          Texas and Six Flags over Georgia. Unlike the other two parks, which are currently managed but are no longer owned by Six Flags, Six Flags St. Louis is still completely owned and operated by the Six Flags corporation. The park branded itself
+          as
+          <q>The Coaster Capital of Missouri</q> in 2013. Admission to Six Flags St. Louis also includes <em>free admission to
+                    Hurricane Harbor</em>.</p>
+      </article>
+
+
+      <article class="col-md-3 col-sm-6 column2">
+        <p><strong>Busch Stadium</strong>, also referred to informally as <q>New Busch Stadium</q> or <q>Busch Stadium
+                    III</q>, is a baseball park located in St. Louis, Missouri, and the home of the St. Louis Cardinals, the city's Major League Baseball franchise. The stadium has a seating capacity of 43,975, and contains 3,706 club seats and 61 luxury
+          suites. It replaced Busch Memorial Stadium (aka Busch Stadium II) and occupies a portion of that stadium's former footprint. A commercial area, dubbed <em>Ballpark
+                    Village</em>, was built adjacent to the stadium over the remainder of the former stadium's footprint.</p>
+      </article>
+
+
+      <article class="col-md-3 col-sm-6 column3">
+        <p>The <strong>St. Louis Zoological Park</strong>, commonly known as the St. Louis Zoo, is a zoo in Forest Park in St. Louis, Missouri, United States. It is recognized as a leading zoo in animal management, research, conservation, and education.
+          The zoo is accredited by the Association of Zoos and Aquariums. Admission is free based on a public subsidy from a cultural tax district, the <em>Metropolitan
+                    Zoological Park</em> and Museum District; fees are charged for some special attractions. A special feature is the 2 ft narrow gauge Emerson Zooline Railroad with passenger trains pulled by Chance Rides C.P. Huntington locomotives that
+          encircle the zoo, stopping at the more popular attractions.
+        </p>
+      </article>
+
+
+      <article class="col-md-3 column4 hidden-sm">
+        <p>The <strong>Gateway Arch</strong> is a 630-foot monument in St. Louis in the U.S. state of Missouri. Clad in stainless steel and built in the form of an inverted, weighted catenary arch, it is the <em>world's tallest arch,
+                    the tallest man-made monument in the Western Hemisphere,
+                    and Missouri's tallest accessible building</em>. Built as a monument to the westward expansion of the United States, it is the centerpiece of the Jefferson National Expansion Memorial and has become an internationally famous symbol
+          of St. Louis.</p>
+      </article>
+    </section>
+  </div>
+  <!-- start to images, want to include 4 different images -->
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <img alt="Six Flags" class="img-circle img-responsive" src="https://m.sixflags.com/sites/default/files/american_thunder_closeup_sfsl-edited.jpg" style="width: 250px; height: 250px">
+      </div>
+
+
+      <div class="col-md-3 col-sm-6">
+        <img alt="Busch Stadium" class="img-circle img-responsive" src="https://regmedia.co.uk/2015/06/16/st_louis_cardinals.jpg?x=1200&y=794" style="width: 250px; height: 250px">
+      </div>
+
+
+      <div class="col-md-3 col-sm-6">
+        <img alt="St. Louis Zoo" class="img-circle img-responsive" src="http://img2.10bestmedia.com/Images/Photos/136896/PPC-GilCoursonLightspeedphotoscom_54_990x660_201404221742.JPG" style="width: 250px; height: 250px">
+      </div>
+
+
+      <div class="col-md-3 col-sm-6">
+        <img alt="St. Louis Arch" class="img-circle img-responsive" src="http://www.gatewayarch.com/getmedia/1ff79cb2-cf6b-435b-96bd-08193c94ce65/gateway-arch-photo-gallery.jpg.aspx?width=450&height=250&ext=.jpg" style="width: 250px; height: 250px">
+      </div>
+    </div>
+    <!-- end of images -->
+    <br>
+    <br>
+  </div>
+  <!-- <br>breaks give spaces in height -->
+  <br>
+  <br>
+  <!-- basic entertainment link -->
+
+
+  <div style="text-align: center">
+    <a alt="attractions-in-st-louis" class="att" href="https://www.google.com/#q=entertainment+in+st+louis+mo" style="width: 20px; height: 20px;" target="_new">Attractions in St Louis</a>
+  </div>
+  <!-- <br>breaks give spaces in height -->
+  <br>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/th--PlmGPZY">2011 World Series Game 6, St.Louis Cardinals"</iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- go to top of page -->
+
+  <!-- class for att is used for attractions-in-st-louis and #top -->
+  <div style="text-align: center">
+    <a class="att" href="#top">Go to top of page</a>
+  </div>
+</body>
+</html>    

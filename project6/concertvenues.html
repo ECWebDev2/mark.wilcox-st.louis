@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--  Bootstrap added -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <title>ATT WebDev Project5</title>
+    <link href="home.html" rel="stylesheet">
+    <link href="restaurants.html" rel="stylesheet">
+    <link href="kidszone.html" rel="stylesheet">
+    <link href="adultgetaway.html" rel="stylesheet">
+    <link href="parks.html" rel="stylesheet">
+    <link href="concertvenues.html" rel="stylesheet">
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body id="concertvenues" style="height: 2000px">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- navbar-header is used to add links onto the naviagtion bar. -->
+                <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <!-- St. Louis Museum of Transportation --><a class="navbar-brand" href="#" target="_blank" id="stlouis">St. Louis</a> </div>
+            <!-- navbar collapse creates a bar in the  upper right corner of the screen when it is too small to view on devices. This way it will act as a dropdown. -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- inside the header you must have nav navbar-nav to create your buttons/links onto the navigation bar. make sure you make your list active againor it won't do anything. -->
+                    <li class="active"> <a href="#">Home</a> </li>
+                    <li> <a href="http://www.billboard.com/charts/rock-songs" target="_blank">Rock</a> </li>
+                    <li> <a href="http://www.billboard.com/charts/jazz-albums" target="_blank">Jazz</a> </li>
+                    <li> <a href="https://medium.com/cuepoint/what-do-the-harlem-shake-star-wars-gary-glitter-hawaii-five-o-and-barry-white-have-in-common-542dc7c0c545#.4833kgv3c" target="_blank">Instrumental</a> </li>
+                    <li> <a href="http://www.billboard.com/charts/country-songs" target="_blank">Country</a> </li>
+                    <!-- dropdown menu bar attempt on food; must make class="active" to start the dropdown menu. -->
+                    <li class="active"> <a href="#">&gt;&gt;</a> </li>
+                    <!-- dropdown requires jquery and bootstrap. min for it to work. without the files you will not be able to click on it for any action. -->
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Schedules<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li> <a href="http://www.livenation.com/venues/14396/hollywood-casino-amphitheatre-st-louis-mo" target="_blank">Hollywood</a> </li>
+                            <li> <a href="http://www.thepageant.com/" target="_blank">Pageant</a> </li>
+                            <li> <a href="http://www.peabodyoperahouse.com/" target="_blank">Peabody</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="https://en.wikipedia.org/wiki/Music" target="_blank">About</a> </li>
+                </ul>
+                <!-- We still need to use the navbar left so that the search form will place next to the links and dropdown -->
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search"> </div>
+                    <!--button type at this time is a pretty simple form. no active use at this time-->
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <!--end of form-group with the input type and button. Very little room now for extras on the navigation bar. -->
+                <!-- navbar-right will give us some space in the middle to add more links or icons. -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <a href="#"><span class=
+                        "glyphicon glyphicon-user"></span> Sign Up</a> </li>
+                    <li> <a href="#"><span class=
+                        "glyphicon glyphicon-log-in"></span> Login</a> </li>
+                </ul>
+            </div>
+            <!-- end of div taken out for collpase -->
+        </div>
+    </nav>
+    <div class="container"> !-- Breadcrumb menu to navigate between HTML pages. -->
+        <h4>St. Louis Pages</h4>
+        <ul class="breadcrumb">
+            <li><a href="home.html" target="_blank">Home</a></li>
+            <li><a href="restaurants.html" target="_blank">Restaurants</a></li>
+            <li><a href="kidszone.html" target="_blank">Kid's Zone</a></li>
+            <li><a href="adultgetaway.html" target="_blank">Adult Getaway</a></li>
+            <li><a href="parks.html" target="_blank">Parks</a></li>
+            <li class="active"><a href="#">Concert Venues</a></li>
+        </ul>
+    </div>
+    <!-- jumbotron text starts right under naviagtion bar, let's begin, shall we!!! -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="entertainment">Concert Venues</h1> </div>
+    </div>
+    <!-- images of concert venues part 1 -->
+    <div class="container img-responsive">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <p></p><img src="concertvenues/concert0.jpg" class="img-rounded" style="width: 275px; height: 300px"> </div>
+            <div class="col-md-3 col-sm-6">
+                <p></p><img src="concertvenues/concert1.jpg" class="img-rounded" style="width: 275px; height: 300px"> </div>
+            <div class="col-md-3 col-sm-6">
+                <p></p><img src="concertvenues/concert2.jpg" class="img-rounded" style="width: 275px; height: 300px"> </div>
+            <div class="col-md-3 col-sm-6">
+                <p></p><img src="concertvenues/concert3.jpg" class="img-rounded" style="width: 275px; height: 300px"> </div>
+        </div>
+    </div>
+    <!-- end of images -->
+    <!-- images of concert venues part 2 -->
+    <div class="container img-responsive">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <p></p><img src="concertvenues/concert4.jpg" class="img-rounded" style="width: 275px; height: 300px"> </div>
+            <div class="col-md-3 col-sm-6">
+                <p></p><img src="concertvenues/concert5.jpg" class="img-rounded" style="width: 275px; height: 300px"> </div>
+            <div class="col-md-3 col-sm-6">
+                <p></p><img src="concertvenues/concert1.jpg" class="img-rounded" style="width: 275px; height: 300px"> </div>
+            <div class="col-md-3 col-sm-6">
+                <p></p><img src="concertvenues/concert0.jpg" class="img-rounded" style="width: 275px; height: 300px"> </div>
+        </div>
+    </div>
+    <!-- end of images -->
+    <div class="container">
+        <div style="text-align: center"> <a class="att1" href="#top">Go to top of page</a> </div>
+    </div>
+</body>
+
+</html>

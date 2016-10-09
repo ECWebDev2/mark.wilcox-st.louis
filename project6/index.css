@@ -1,0 +1,179 @@
+/* h1 jumbotron text of St. Louis is centered. */
+
+
+/*paragraph under jumbotron is indented more than the regular text-indent: inherit */
+
+
+/* background image is granite-like */
+
+
+/* always make sure your background image doesn't hide your text */
+
+#home {
+    background-image: url("backgrounds/gray.jpg");
+    background-size: contain;
+    box-sizing: border-box;
+    outline-offset: inherit;
+    outline-color: #0000ff;
+}
+
+#restaurants {
+    background-image: url("backgrounds/blueflow.jpg");
+    background-size: contain;
+    box-sizing: border-box;
+    outline-offset: inherit;
+    outline-color: #0000ff;
+}
+
+#kidszone {
+    background-image: url("backgrounds/greens.jpg");
+    background-size: contain;
+    box-sizing: border-box;
+    outline-offset: inherit;
+    outline-color: #0000ff;
+}
+
+#adultgetaway {
+    background-image: url("backgrounds/mexico.jpg");
+    background-size: contain;
+    box-sizing: border-box;
+    outline-offset: inherit;
+    outline-color: #0000ff;
+}
+
+#parks {
+    background-image: url("backgrounds/mountaincamp.jpg");
+    background-size: contain;
+    box-sizing: border-box;
+    outline-offset: inherit;
+    outline-color: #0000ff;
+}
+
+#concertvenues {
+    background-image: url("backgrounds/grassymount.jpg");
+    background-size: contain;
+    box-sizing: border-box;
+    outline-offset: inherit;
+    outline-color: #0000ff;
+}
+
+#stlouis {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.breadcrumb {
+    text-align: center;
+    padding: 15px;
+    resize: both;
+    overflow: auto;
+}
+
+.entertainment {
+    text-align: center;
+    padding: 5px;
+    font-size: 50px;
+}
+
+.para1 {
+    font-family: 'Lobster', cursive;
+    text-indent: 80px;
+}
+
+.breadcrumb {
+    text-align: center;
+    padding: 10px;
+}
+
+.image {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+}
+
+.image-rounded {
+    margin: 2px;
+    padding: inherit;
+}
+
+#white {
+    font-family: 'Ewert', cursive;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+#three {
+    text-align: center;
+    font-size: 20px;
+    image-resolution: snap;
+    padding: 5px;
+    color: #ffffff;
+}
+
+#park1,
+#park2,
+#park3 {
+    display: block;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #ff0000;
+    margin: auto;
+    padding: auto;
+}
+
+#p1,
+#p2 {
+    display: block;
+    font-weight: 700;
+    text-align: center animation-duration: 0.5;
+    color: #ffffff;
+    margin: auto;
+    padding: auto;
+}
+
+.carousel-inner,
+.item,
+img {
+    width: 70%;
+    margin: auto;
+}
+
+
+/* class for links for attractions in st louis and top of page */
+
+.att {
+    border: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    padding: 1px;
+    margin: auto;
+    font-size: 28px;
+    color: #000000;
+}
+
+.att1 {
+    border: solid;
+    border-width: 1px;
+    border-color: #0000ff;
+    padding: 1px;
+    margin: auto;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+@media only screen and(max-width: 767px) {
+    body {
+        background-color: #00ff00;
+    }
+}
+
+@media only screen and(max-width: 1237px) {
+    body {
+        background-color: #0000ff;
+    }
+}

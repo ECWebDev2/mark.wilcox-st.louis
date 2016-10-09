@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--  Bootstrap added -->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <title>ATT WebDev Project5</title>
+    <link href="home.html" rel="stylesheet">
+    <link href="restaurants.html" rel="stylesheet">
+    <link href="kidszone.html" rel="stylesheet">
+    <link href="adultgetaway.html" rel="stylesheet">
+    <link href="parks.html" rel="stylesheet">
+    <link href="concertvenues.html" rel="stylesheet">
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body id="adultgetaway" style="height: 2000px">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- navbar-header is used to add links onto the naviagtion bar. -->
+                <button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+                <!-- St. Louis Museum of Transportation --><a alt="Museum of Transportation" class="navbar-brand" href="http://transportmuseumassociation.org/" target="_blank" id="stlouis">St. Louis</a> </div>
+            <!-- navbar collapse creates a bar in the  upper right corner of the screen when it is too small to view on devices. This way it will act as a dropdown. -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <!-- inside the header you must have nav navbar-nav to create your buttons/links onto the navigation bar. make sure you make your list active againor it won't do anything. -->
+                    <li class="active"> <a href="#">Home</a> </li>
+                    <!-- Night Clubs -->
+                    <li> <a href="https://foursquare.com/top-places/saint-louis/best-places-nightclubs" alt="nightclubs" target="_blank">Night Clubs</a> </li>
+                    <!-- Hotels -->
+                    <li> <a href="https://foursquare.com/v/the-ritzcarlton-st-louis/4acbc3f9f964a5207ac520e3" alt="ritz-carlton" target="_blank">Hotels</a> </li>
+                    <!-- Pubs -->
+                    <li> <a href="https://foursquare.com/v/scottish-arms/4ad8e438f964a520bd1521e3" target="_blank" alt="scottish-arms">Pubs</a> </li>
+                    <!-- Cabs -->
+                    <li> <a href="https://www.google.com/#q=saint+louis+mo+cabs" alt="cabs" target="_blank">Cabs</a> </li>
+                    <!-- dropdown menu bar attempt on food; must make class="active" to start the dropdown menu. -->
+                    <li class="active"> <a href="#">>></a> </li>
+                    <!-- dropdown requires jquery and bootstrap. min for it to work. without the files you will not be able to click on it for any action. -->
+                    <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Casinos<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <!-- Lumiere Place Casino & Hotel -->
+                            <li> <a href="https://foursquare.com/lumiereplace" alt="Lumiere Place Casino & Hotel" target="_blank">Lumiere Place</a> </li>
+                            <!-- River City Casino -->
+                            <li> <a href="https://foursquare.com/v/river-city-casino/4b4003edf964a5203fb425e3" alt="River City Casino" target="_blank">River City Casino</a> </li>
+                            <!-- Hollywood Casino St. Louis -->
+                            <li> <a href="https://foursquare.com/v/hollywood-casino-st-louis/4acbc3fdf964a52019c720e3" alt="Hollywood Casino St. Louis" target="_blank">Hollywood Casino</a> </li>
+                            <!-- Ameristar Casino -->
+                            <li> <a href="https://foursquare.com/v/ameristar-casino/4acbc3faf964a520fcc520e3" alt="Ameristar Casino" target="_blank">Ameristar Casino</a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="https://foursquare.com/top-places/saint-louis/best-places-scenic-views" alt="Scenic Views" target="_blank">About</a> </li>
+                </ul>
+                <!-- We still need to use the navbar left so that the search form will place next to the links and dropdown -->
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search"> </div>
+                    <!--button type at this time is a pretty simple form. no active use at this time-->
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <!--end of form-group with the input type and button. Very little room now for extras on the navigation bar. -->
+                <!-- navbar-right will give us some space in the middle to add more links or icons. -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <a href="#"><span class=
+                        "glyphicon glyphicon-user"></span> Sign Up</a> </li>
+                    <li> <a href="#"><span class=
+                        "glyphicon glyphicon-log-in"></span> Login</a> </li>
+                </ul>
+            </div>
+            <!-- end of div taken out for collpase -->
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <!-- Breadcrumb menu to navigate between HTML pages. -->
+        <h4>St. Louis Pages</h4>
+        <ul class="breadcrumb">
+            <li><a href="home.html" target="_blank">Home</a></li>
+            <li><a href="restaurants.html" target="_blank">Restaurants</a></li>
+            <li><a href="kidszone.html" target="_blank">Kid's Zone</a></li>
+            <li class="active"><a href="#">Adult Getaway</a></li>
+            <li><a href="parks.html" target="_blank">Parks</a></li>
+            <li><a href="concertvenues.html" target="_blank">Concert Venues</a></li>
+        </ul>
+    </div>
+    <!-- jumbotron text starts right under naviagtion bar, let's begin, shall we!!! -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="entertainment">Adult Getaway</h1> </div>
+    </div>
+    <!-- start to images, want to include 4 different images -->
+    <!-- the columns have to add up to 12 on the first value, then after that you can put any values you want within each div. example=col-md-3 col-sm-4 col-xs-6 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <p class="image">"Bed Time"</p> <img alt="Bed Time" src="adultgetaway/bed.jpg" style="width: 300px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <p class="image">"Irish Tavern"</p><img alt="Irish Tavern" src="adultgetaway/irish.jpg" style="width: 300px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <a class="thumbnail">
+                    <p class="image">"Night Life"</p> <img alt="Night Life" src="adultgetaway/nightlife.jpg" style="width: 300px; height: 300px"></a>
+            </div>
+            <div class="col-md-3 col-sm--6">
+                <a class="thumbnail">
+                    <p class="image">"Fountain"</p> <img alt="Fountain" src="adultgetaway/wish.jpg" style="width: 300px; height: 300px"></a>
+            </div>
+        </div>
+    </div>
+    <!-- Three more images to complete the page unless I add different glyphicons.-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <a class="img-rounded">
+                    <p class="image"></p> <img alt="night1" src="adultgetaway/night1.jpg" class="img-rounded" style="width: 300px; height: 300px"></a>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <p class="image"></p><img alt="night2" src="adultgetaway/night2.jpg" class="img-rounded" style="width: 300px; height: 300px"> </div>
+            <div class="col-md-4 col-sm-6">
+                <p class="image"></p> <img alt="night3" src="adultgetaway/night3.jpg" class="img-rounded" style="width: 300px; height: 300px"> </div>
+        </div>
+    </div>
+    <!-- end of images -->
+    <div class="container" style="text-align: center">
+        <div class="row"> <a class="att1" href="#top">Go to top of page</a> </div>
+    </div>
+</body>
+
+</html>
